@@ -6,3 +6,9 @@
         in your city
     </p>
 @endsection
+@section('advertisement')
+    @parent
+    <p>
+        HackerPair members always get 10% off at Tron Cafe!
+    </p>
+@endsection
