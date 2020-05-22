@@ -14,15 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $languages = [
-        'languages' => [
-            'Perl',
-            'PHP',
-            'Python'
-        ]
-    ];
-    dd($languages);
-    \Log::debug($languages);
-    \DebugBar::error('Something went wrong');
     return view('welcome');
 });
