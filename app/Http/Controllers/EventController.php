@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class EventController extends Controller
 {
     public function show($id) {
-        dd($id);
+        return view('events.show') -> with('id', $id);
     }
 
     public function category($category, $subcategory = 'all') {
