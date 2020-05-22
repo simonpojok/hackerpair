@@ -6,5 +6,6 @@
     </head>
     <body>
         <h1>Welcome to HackerPair</h1>
+        <a href="/events/42">Laravel Hacking and Coffee</a>
     </body>
 </html>
