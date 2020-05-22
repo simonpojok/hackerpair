@@ -1,11 +1,6 @@
 <ul>
     @forelse($events as $event)
-        <li>
-            {{ $event }}
-            @if(strpos($event, 'Laravel') !== false)
-                (sweet framework)
-            @endif
-        </li>
+        @include('partials._row', ['event' => $event])
     @empty
         <li>No events available</li>
     @endforelse
