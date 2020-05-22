@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Welcome to HackerPair</title>
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     </head>
     <body>
         <div>
