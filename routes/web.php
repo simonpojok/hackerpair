@@ -32,4 +32,4 @@ Route::get('locations', 'LocationController@index') -> name('locations.index');
 
 Route::get('map', 'MapController@index') -> name('maps.index');
 
-Auth::routes();
+//Auth::routes();
