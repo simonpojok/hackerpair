@@ -1,11 +1,10 @@
 <?php
 if ($app -> environment('local')) {
     $app -> configureMonologUsing(function ($monolog) {
-        $monolog -> pushHandler(new \Mongo\Handler\ChromePHPHandler());
+        $monolog -> pushHandler(new \Monolog\Handler\ChromePHPHandler());
     });
 }
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Application Name
