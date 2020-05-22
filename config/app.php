@@ -1,5 +1,9 @@
 <?php
-
+if ($app -> environment('local')) {
+    $app -> configureMonologUsing(function ($monolog) {
+        $monolog -> pushHandler(new \Mongo\Handler\ChromePHPHandler());
+    });
+}
 return [
 
     /*
