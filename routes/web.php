@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'WelcomeController@index');
 Route::get('events/{id}', 'EventController@show') ->name('events.show');
 Route::get('events/category/{category}/{subcategory?}', 'EventController@category');
+Route::get('events', 'EventController@index');
