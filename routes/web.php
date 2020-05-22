@@ -23,5 +23,6 @@ Route::get('/', function () {
     ];
     dd($languages);
     \Log::debug($languages);
+    \DebugBar::error('Something went wrong');
     return view('welcome');
 });
