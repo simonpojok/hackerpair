@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +20,16 @@ Route::view('about/book', 'about.book') -> name('about.book');
 Route::view('about/faq', 'about.faq') -> name('about.faq');
 Route::view('about/privacy', 'about.privacy') -> name('about.privacy');
 Route::view('about/tos', 'about.tos') -> name('about.tos');
+
+Route::view('contact', 'contact.index') -> name('contact.index');
+
+Route::get('events', 'EventsController@index') -> name('events.index');
+Route::get('events/{id}', 'EventsController@show') -> name('events.show');
+
+Route::get('languages', 'LanguageController@index') -> name('languages.index');
+
+Route::get('locations', 'LocationController@index') -> name('locations.index');
+
+Route::get('map', 'MapController@index') -> name('maps.index');
+
+Auth::routes();
