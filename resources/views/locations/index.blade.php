@@ -1,4 +1,4 @@
 @extends('layout.app')
 @section('content')
-    <h1>Events</h1>
+    <h1>Locations</h1>
 @endsection
