@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'WelcomeController@index');
-Route::get('events/{id}', 'EventController@show') ->name('events.show');
-Route::get('events/category/{category}/{subcategory?}', 'EventController@category');
-Route::get('events', 'EventController@index');
+Route::view('about', 'about.index') -> name('about.index');
+Route::view('about/book', 'about.book') -> name('about.book');
+Route::view('about/faq', 'about.faq') -> name('about.faq');
+Route::view('about/privacy', 'about.privacy') -> name('about.privacy');
+Route::view('about/tos', 'about.tos') -> name('about.tos');
