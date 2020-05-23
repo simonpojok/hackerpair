@@ -20,9 +20,6 @@ class CreateEventsTable extends Migration
             $table -> string('city');
             $table -> text('description') -> nullable();
             $table->timestamps();
-            $table -> boolean('confirmed') ->default(false);
-            $table -> string('comments') -> nullable();
-            $table -> tinyInteger('age') -> unique() ->default(0);
         });
     }
 
