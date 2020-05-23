@@ -9,6 +9,7 @@
 @section('advertisement')
     @parent
     <p>
-        HackerPair members always get 10% off at Tron Cafe!
+
+     3   HackerPair members always get 10% off at Tron Cafe!
     </p>
 @endsection
