@@ -8,16 +8,13 @@ use Tests\DuskTestCase;
 
 class NavigationBarTest extends DuskTestCase
 {
-    /**
-     * A Dusk test example.
-     *
-     * @return void
-     */
+
     public function testExample()
     {
         $this->browse(function (Browser $browser) {
-            $browser->visit('/')
-                    ->assertSee('Laravel');
+            $browser->visit('http://127.0.0.1:8000/')
+                    -> clickLink('Locations')
+                    -> assertPathIs('/locations');
         });
     }
 }
