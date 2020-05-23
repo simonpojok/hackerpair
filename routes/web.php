@@ -23,13 +23,12 @@ Route::view('about/tos', 'about.tos') -> name('about.tos');
 
 Route::view('contact', 'contact.index') -> name('contact.index');
 
-Route::get('events', 'EventsController@index') -> name('events.index');
-Route::get('events/{id}', 'EventsController@show') -> name('events.show');
-
 Route::get('languages', 'LanguageController@index') -> name('languages.index');
 
 Route::get('locations', 'LocationController@index') -> name('locations.index');
 
 Route::get('map', 'MapController@index') -> name('maps.index');
+
+Route::resource('events', 'EventsController');
 
 //Auth::routes();
