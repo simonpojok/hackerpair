@@ -8,4 +8,5 @@
             <li>No events</li>
         @endforelse
     </ul>
+    {!! $events -> links() !!}
 @endsection

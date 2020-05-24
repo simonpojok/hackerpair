@@ -17,4 +17,5 @@
             @show
         </div>
     </body>
+    <script src="{{ asset('js/app.js') }}" type="javascript"></script>
 </html>
