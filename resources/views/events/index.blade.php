@@ -8,5 +8,5 @@
             <li>No events</li>
         @endforelse
     </ul>
-    {!! $events -> links() !!}
+    {!! $events -> links('vendor.pagination.bootstrap-4') !!}
 @endsection
